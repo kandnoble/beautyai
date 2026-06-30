@@ -39,11 +39,12 @@
         <button class="filter-btn">기초과정 3주차</button>
     </div>
 
+    <!-- 카드 배열 (Grid) 시작 -->
     <div class="grid">
         
+        <!-- 1주차 1번 카드 시작 -->
         <div class="card">
             <img id="media-img-1" src="avatar.jpg" alt="3D 아바타 이미지" onerror="this.src='https://via.placeholder.com/450x300?text=Image+Not+Found'">
-            
             <div class="card-content">
                 <div class="tag">1-1</div>
                 <h3 style="margin: 15px 0 10px 0; font-size: 20px; color: #1f2328;">1-1. 복고풍 3D 일러스트 아바타</h3>
@@ -84,11 +85,10 @@
                 </div>
             </div>
         </div>
-        </div>
 
-    <div class="card">
+        <!-- 1주차 2번 카드 시작 -->
+        <div class="card">
             <img id="media-img-2" src="profile_card.jpg" alt="미니미 프로필 카드 이미지" onerror="this.src='https://via.placeholder.com/450x300?text=Image+Not+Found'">
-            
             <div class="card-content">
                 <div class="tag">1-2</div>
                 <h3 style="margin: 15px 0 10px 0; font-size: 20px; color: #1f2328;">1-2. 한국 감성 미니미 프로필 카드</h3>
@@ -144,17 +144,10 @@
                 </div>
             </div>
         </div>
-        ```
 
----
-
-### 💡 활용 팁
-* **이미지 연결:** 이번에 새로 만드실 프로필 카드 이미지 파일명을 이미지 태그의 `src="profile_card.jpg"` 부분에 변경해서 넣어주시면 됩니다. (파일명은 안전하게 영어와 숫자로 구성하시는 것 잊지 마세요!)
-* **버튼 활성화:** 기존 파일 맨 아래에 이미 자바스크립트가 들어가 있으므로, 이 코드만 추가해 주시면 새 카드의 '복사' 및 '공유' 버튼도 자동으로 연동되어 작동합니다.
-
-<div class="card">
+        <!-- 1주차 3번 카드 시작 -->
+        <div class="card">
             <img id="media-img-3" src="emotion_sheet.jpg" alt="3x3 감정 시트 이미지" onerror="this.src='https://via.placeholder.com/450x300?text=Image+Not+Found'">
-            
             <div class="card-content">
                 <div class="tag">1-3</div>
                 <h3 style="margin: 15px 0 10px 0; font-size: 20px; color: #1f2328;">1-3. Pixar 스타일 3x3 미니미 감정 시트</h3>
@@ -190,25 +183,15 @@
                 </div>
             </div>
         </div>
-        ```
 
----
-
-### 💡 확인 사항
-1. 이미지 태그의 `src="emotion_sheet.jpg"` 부분에는 해당 프롬프트로 생성하신 결과물 파일명을 영문/숫자 형태로 매칭해 넣으시면 됩니다.
-2. 마찬가지로 문서 하단에 이미 공통 자바스크립트가 존재하므로, 이 카드 블록만 순서대로 추가해 주시면 복사/공유/저장 기능이 자동으로 바인딩됩니다.
-
-<!-- 1주차 4번 카드 시작 -->
+        <!-- 1주차 4번 카드 시작 -->
         <div class="card">
-            <!-- 👇 네 번째 카드의 이미지 파일명이나 주소를 넣으세요 (예: hair_report.jpg) -->
             <img id="media-img-4" src="hair_report.jpg" alt="헤어스타일 추천 리포트 이미지" onerror="this.src='https://via.placeholder.com/450x300?text=Image+Not+Found'">
-            
             <div class="card-content">
                 <div class="tag">1-4</div>
                 <h3 style="margin: 15px 0 10px 0; font-size: 20px; color: #1f2328;">1-4. AI 헤어스타일 추천 리포트</h3>
                 <hr style="border: none; border-top: 1px dashed #d0d7de; margin: 15px 0;">
                 
-                <!-- 프롬프트 본문 (버튼이 복사할 텍스트 영역) -->
                 <div id="prompt-text-4" style="font-size: 14px; color: #57606a; line-height: 1.6; margin-bottom: 20px;">
                     <b>[분석 및 리포트 작성]</b><br>
                     얼굴 사진을 참고해서 헤어스타일 추천 리포트 만들어줘. 얼굴 윤곽과 전체적인 분위기를 참고해서 분석해줘.<br><br>
@@ -225,7 +208,6 @@
                     디자인은 미용실 상담 리포트처럼 깔끔하고 세련되게 만들어줘. 고급 뷰티 매거진 느낌으로 만들어줘. 정사각형 이미지, 한국어 텍스트가 잘 보이게 구성해줘.
                 </div>
 
-                <!-- 하단 4개 버튼 영역 -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
                     <button onclick="downloadMedia('media-img-4', 'hair_report.jpg')" style="background-color: #f1f3f5; color: #24292f; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 13px;">이미지/영상 저장</button>
                     <button onclick="shareMedia('media-img-4')" style="background-color: #f1f3f5; color: #24292f; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 13px;">미디어 공유</button>
@@ -234,19 +216,15 @@
                 </div>
             </div>
         </div>
-        <!-- 1주차 4번 카드 끝 -->
 
-<!-- 1주차 5번 카드 시작 -->
+        <!-- 1주차 5번 카드 시작 -->
         <div class="card">
-            <!-- 👇 다섯 번째 카드의 이미지 파일명이나 주소를 넣으세요 (예: recipe_poster.jpg) -->
             <img id="media-img-5" src="recipe_poster.jpg" alt="레시피 시각화 포스터 이미지" onerror="this.src='https://via.placeholder.com/450x300?text=Image+Not+Found'">
-            
             <div class="card-content">
                 <div class="tag">1-5</div>
                 <h3 style="margin: 15px 0 10px 0; font-size: 20px; color: #1f2328;">1-5. 초고해상도 레시피 시각화 포스터</h3>
                 <hr style="border: none; border-top: 1px dashed #d0d7de; margin: 15px 0;">
                 
-                <!-- 프롬프트 본문 (버튼이 복사할 텍스트 영역) -->
                 <div id="prompt-text-5" style="font-size: 14px; color: #57606a; line-height: 1.6; margin-bottom: 20px;">
                     <b>[주제 및 전체 구도]</b><br>
                     [음식명]을 주제로 한 초고해상도 레시피 시각화 포스터. 중앙 음식 풍성·수분감. 선명한 고채도 색감, glossy·juicy 질감, soft glow 조명, 주변 재료 스케치+설명 다이어그램+입체 강조 전체적인 구도. 재료 흩어짐 레이어 구성.<br><br>
@@ -261,7 +239,6 @@
                     이미지 내에 글자는 한국어로 생성. 제목은 &lt;음식명&gt; 레시피로 해줘. 글자가 깨지지 않고 정확도 있게 써줘.
                 </div>
 
-                <!-- 하단 4개 버튼 영역 -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
                     <button onclick="downloadMedia('media-img-5', 'recipe_poster.jpg')" style="background-color: #f1f3f5; color: #24292f; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 13px;">이미지/영상 저장</button>
                     <button onclick="shareMedia('media-img-5')" style="background-color: #f1f3f5; color: #24292f; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 13px;">미디어 공유</button>
@@ -270,19 +247,15 @@
                 </div>
             </div>
         </div>
-        <!-- 1주차 5번 카드 끝 -->
 
-<!-- 1주차 6번 카드 시작 -->
+        <!-- 1주차 6번 카드 시작 -->
         <div class="card">
-            <!-- 👇 여섯 번째 카드의 썸네일 이미지 파일명이나 주소를 넣으세요 (예: recipe_video_thumb.jpg) -->
             <img id="media-img-6" src="recipe_video_thumb.jpg" alt="레시피 실사 영상 썸네일" onerror="this.src='https://via.placeholder.com/450x300?text=Video+Thumbnail'">
-            
             <div class="card-content">
                 <div class="tag">1-6</div>
                 <h3 style="margin: 15px 0 10px 0; font-size: 20px; color: #1f2328;">1-6. 시네마틱 레시피 실사 영상</h3>
                 <hr style="border: none; border-top: 1px dashed #d0d7de; margin: 15px 0;">
                 
-                <!-- 프롬프트 본문 (버튼이 복사할 텍스트 영역) -->
                 <div id="prompt-text-6" style="font-size: 14px; color: #57606a; line-height: 1.6; margin-bottom: 20px;">
                     <b>[기본 구도 및 씬]</b><br>
                     &lt;음식이름&gt; 레시피 포스터가 실제 요리 장면으로 변하는 영상. 위에서 내려다보는 구도(top-down).<br><br>
@@ -294,7 +267,6 @@
                     따뜻한 조명, 사실적인 음식 질감, 시네마틱한 연출, 고화질 4K, 부드러운 카메라 줌.
                 </div>
 
-                <!-- 하단 4개 버튼 영역 -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
                     <button onclick="downloadMedia('media-img-6', 'recipe_video.mp4')" style="background-color: #f1f3f5; color: #24292f; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 13px;">이미지/영상 저장</button>
                     <button onclick="shareMedia('media-img-6')" style="background-color: #f1f3f5; color: #24292f; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 13px;">미디어 공유</button>
@@ -303,9 +275,10 @@
                 </div>
             </div>
         </div>
-        <!-- 1주차 6번 카드 끝 -->
 
-    
+    </div> 
+    <!-- 카드 배열 (Grid) 끝 -->
+
 </div>
 
 <script>
